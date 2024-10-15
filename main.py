@@ -30,7 +30,7 @@ app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 # user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
-user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80"]
+user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80","oxWV56jh_osIxSaq5JMVVGRj_LO8"]
 
 
 # ------------------定义函数------------------
