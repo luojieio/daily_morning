@@ -14,6 +14,7 @@ today = datetime.now()
 # 日期
 start_date = {
   "love":"2018-01-21",
+  "love_day":"01-21",
 }
 
 # 城市
@@ -62,6 +63,15 @@ def get_count(start_date):
 def get_birthday(birthday):
   # next = datetime.strptime(str(date.today().year) + "-" + birthday, "%Y-%m-%d")
   next=datetime.strptime(birthday,"%Y-%m-%d")
+  print(next)
+  if next < datetime.now():
+    next = next.replace(year=next.year + 1)
+  return (next - today).days
+
+def get_day_left(day):
+  next = datetime.strptime(str(date.today().year) + "-" + day, "%Y-%m-%d")
+  
+  print(next)
   if next < datetime.now():
     next = next.replace(year=next.year + 1)
   return (next - today).days
@@ -108,6 +118,7 @@ def call_wx():
   "dinner_menu":{"value":random.choice(dinner)},
 
   "love_days":{"value":get_count(start_date.get('love'))},
+  "love_days_left":{"value":get_day_left(start_date.get('love_day'))},
   "jie_birthday_left":{"value":get_birthday(get_solar('jie'))},
   "chen_birthday_left":{"value":get_birthday(get_solar('chen'))},
 
