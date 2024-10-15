@@ -19,19 +19,20 @@ start_date = {
 # 城市
 city = ['武汉', '广州', '绵阳', '乐昌']
 
-breakfirst=["美式+水煮蛋","豆浆+玉米"]
-lunch=["牛肉"]
-dinner=["玉米"]
+breakfirst=["美式+水煮蛋","豆浆+玉米","红薯+酸奶"]
+lunch=["正常吃"]
+dinner=["玉米","鸡蛋","纤体瓶","贝果","黄瓜","鸡翅+豆腐汤",]
 
 
 # 微信配置（使用环境变量）
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
-user_id = os.environ["USER_ID"]
+# user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
 
 
 
+user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80"]
 
 
 # ------------------定义函数------------------
