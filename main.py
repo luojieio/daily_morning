@@ -25,15 +25,12 @@ dinner=["玉米"]
 
 
 # 微信配置（使用环境变量）
-# app_id = os.environ["APP_ID"]
-# app_secret = os.environ["APP_SECRET"]
-# user_id = os.environ["USER_ID"]
-# template_id = os.environ["TEMPLATE_ID"]
+app_id = os.environ["APP_ID"]
+app_secret = os.environ["APP_SECRET"]
+user_id = os.environ["USER_ID"]
+template_id = os.environ["TEMPLATE_ID"]
 
-app_id="wx80548f530cd1f881"
-app_secret="d253e042fb2a89dd4a72acfbea44d7f3"
-user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80"]
-template_id="4irQKQkB9GZgCMuwcP-pwBkvWxz_CDQF-q6_MYB2e5I"
+
 
 
 
