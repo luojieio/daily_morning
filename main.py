@@ -18,7 +18,7 @@ start_date = {
 }
 
 # 城市
-city = ['武汉', '广州', '绵阳', '乐昌']
+# city = ['武汉', '广州', '绵阳', '乐昌']
 
 breakfirst=["美式","鸡蛋","豆浆","酸奶","包子","纯牛奶","玉米","红薯","花卷","三明治","云吞"]
 lunch=["正常吃"]
@@ -28,9 +28,9 @@ dinner=["玉米","鸡蛋","纤体瓶","贝果","黄瓜","鸡翅","豆腐汤","�
 # 微信配置（使用环境变量）
 app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
-# user_id = os.environ["USER_ID"]
 template_id = os.environ["TEMPLATE_ID"]
 user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80","oxWV56jh_osIxSaq5JMVVGRj_LO8"]
+
 
 
 # ------------------定义函数------------------
@@ -94,24 +94,24 @@ def call_wx():
   # 初始化微信消息实例
   wm = WeChatMessage(client)
   # 获取天气
-  city_dir={}
-  for i in city:
-    i_weather,i_temp=get_weather(i)
-    city_dir[i]={
-      "weather":i_weather,
-      "temperature":i_temp
-    }
+  # city_dir={}
+  # for i in city:
+  #   i_weather,i_temp=get_weather(i)
+  #   city_dir[i]={
+  #     "weather":i_weather,
+  #     "temperature":i_temp
+  #   }
   
   # 定义模板数据
   data = {
-  "wuhan_weather":{"value":city_dir.get('武汉').get('weather')},
-  "wuhan_temperature":{"value":city_dir.get('武汉').get('temperature')},
-  "guangzhou_weather":{"value":city_dir.get('广州').get('weather')},
-  "guangzhou_temperature":{"value":city_dir.get('广州').get('temperature')},
-  "mianYang_weather":{"value":city_dir.get('绵阳').get('weather')},
-  "mianYang_temperature":{"value":city_dir.get('绵阳').get('temperature')},
-  "leChang_weather":{"value":city_dir.get('乐昌').get('weather')},
-  "leChang_temperature":{"value":city_dir.get('乐昌').get('temperature')},
+  # "wuhan_weather":{"value":city_dir.get('武汉').get('weather')},
+  # "wuhan_temperature":{"value":city_dir.get('武汉').get('temperature')},
+  # "guangzhou_weather":{"value":city_dir.get('广州').get('weather')},
+  # "guangzhou_temperature":{"value":city_dir.get('广州').get('temperature')},
+  # "mianYang_weather":{"value":city_dir.get('绵阳').get('weather')},
+  # "mianYang_temperature":{"value":city_dir.get('绵阳').get('temperature')},
+  # "leChang_weather":{"value":city_dir.get('乐昌').get('weather')},
+  # "leChang_temperature":{"value":city_dir.get('乐昌').get('temperature')},
 
   "breakfirst_menu":{"value":random.choice(breakfirst)},
   "lunch_menu":{"value":random.choice(lunch)},
