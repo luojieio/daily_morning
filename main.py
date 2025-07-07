@@ -20,14 +20,10 @@ start_date = {
   "love_day":"01-21",
 }
 
-app_id="wx80548f530cd1f881"
-app_secret="d253e042fb2a89dd4a72acfbea44d7f3"
-template_id="_L0KJ6g2kq8Ws_KglTk6TUpD3ALrzxgOdsKcJhEF8Ik"
-
 # 微信配置（使用环境变量）
-# app_id = os.environ["APP_ID"]
-# app_secret = os.environ["APP_SECRET"]
-# template_id = os.environ["TEMPLATE_ID"]
+app_id = os.environ["APP_ID"]
+app_secret = os.environ["APP_SECRET"]
+template_id = os.environ["TEMPLATE_ID"]
 user_id=["oxWV56ooCAoSKwx44Y1J1HPiPm80","oxWV56jh_osIxSaq5JMVVGRj_LO8"]
 
 
