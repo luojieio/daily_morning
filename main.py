@@ -15,6 +15,7 @@ today = datetime.now()
 
 # 日期
 start_date = {
+  "photo":"09-01",
   "ceremory":"10-19",
   "love":"2018-01-21",
   "love_day":"01-21",
@@ -77,6 +78,7 @@ def call_wx():
     "jie_birthday_left":{"value":get_birthday(get_solar('jie'))},
     "chen_birthday_left":{"value":get_birthday(get_solar('chen'))},
     "ceremony_days_left":{"value":get_day_left(start_date.get('ceremory'))},
+    "photo_days_left":{"value":get_day_left(start_date.get('photo'))},
   }
 
   # 发送模板消息
